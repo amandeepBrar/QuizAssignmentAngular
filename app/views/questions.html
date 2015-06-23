@@ -1,0 +1,12 @@
+<h3>Hello {{nameOfUsr}}</h3>
+<hr>
+<p>{{questions[index].question}}</p>
+<ul style="list-style-type:none">
+	<li><input name='answer' ng-model="ans" value="A" type="radio">{{questions[index].optionA}}</li>
+	<li><input name='answer' ng-model="ans" value="B" type="radio">{{questions[index].optionB}}</li>
+	<li><input name='answer' ng-model="ans" value="C" type="radio">{{questions[index].optionC}}</li>
+	<li><input name='answer' ng-model="ans" value="D" type="radio">{{questions[index].optionD}}</li>
+</ul>
+
+<button ng-disabled='ans==undefined' ng-click="submitAnswer()">Submit</button>
+<hr>
